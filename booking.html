@@ -1,11 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Tourism Guide App | Contact & Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <h1>Eco-Tourism | Contact</h1>
+      </div>
+
+      <nav class="links">
+        <div class="nav-controls">
+          <button class="toggle-mode" aria-label="Toggle Theme">Dark Mode</button>
+          <button class="hamburger" id="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Explore</a></li>
+          <li><a href="booking.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact-container">
+        <!-- Contact Info Block -->
+        <aside class="contact-details">
+          <h2>Get in Touch</h2>
+          <p>Ready to explore? Drop us a line or book your expedition directly.</p><br>
+          <ul class="info-list">
+            <li><strong>HQ:</strong> Balakong, Selangor, Malaysia</li>
+            <li><strong>Email:</strong> guides@eco-tourism.mock</li>
+            <li><strong>Phone:</strong> +60 12-345 6789</li>
+          </ul>
+        </aside>
+
+        <!-- The Booking Form -->
+        <div class="form-wrapper">
+          <form id="booking-form" novalidate>
+            
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Doe">
+              <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddr">Email Address</label>
+              <input type="email" id="emailAddr" name="emailAddr" placeholder="jane@example.com">
+              <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="destination">Select Destination (Dropdown)</label>
+              <select id="destination" name="destination">
+                <option value="">-- Choose a location --</option>
+                <option value="danum">Danum Valley Canopy</option>
+                <option value="sipadan">Sipadan Reef Dive</option>
+                <option value="kinabalu">Mount Kinabalu Summit</option>
+              </select>
+              <span class="error-msg" id="destError"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Experience Level (Radio Buttons)</label>
+              <div class="radio-group">
+                <input type="radio" id="expBeginner" name="experience" value="beginner">
+                <label for="expBeginner">Beginner</label>
+                
+                <input type="radio" id="expAdvanced" name="experience" value="advanced">
+                <label for="expAdvanced">Advanced</label>
+              </div>
+              <span class="error-msg" id="radioError"></span>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Booking</button>
+            <div id="successMessage" class="success-msg"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2026 Alif Daniel</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
