@@ -9,8 +9,15 @@
 const btnToggleMode = document.querySelector(".toggle-mode");
 const body = document.body;
 
+// make sure browser remember your chosen theme
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "dark") body.classList.add("dark");
+
 btnToggleMode.addEventListener("click", () => {
   body.classList.toggle("dark");
+
+  if (body.classList.contains("dark")) localStorage.setItem("theme", "dark");
+  else localStorage.setItem("theme", "light");
 });
 
 // Form validation

@@ -41,6 +41,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -154,6 +155,7 @@ body.dark .icon-moon {
 
 /* nav links */
 .nav-links a {
+  display: block;
   background-color: var(--primary-color);
   color: var(--surface-color);
   border: 3px solid var(--text-primary);
@@ -194,7 +196,6 @@ body.dark .icon-moon {
     right: 10px;
     gap: 8px;
 
-    /* margin: 4px 0; */
     background-color: var(--surface-color);
     border: 3px solid var(--border-color);
     padding: 10px;
@@ -489,11 +490,25 @@ body.dark .icon-moon {
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accordion-question:hover {
   background-color: var(--secondary-color);
   color: #ffffff;
+}
+
+.accordion-question::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.accordion-question.active::after {
+  content: '\2212'; /* standard Unicode character for a minus sign */
 }
 
 /* This is hidden by default so jQuery can slide it down */
@@ -527,6 +542,7 @@ body.dark .icon-moon {
   gap: 15px;
   list-style: none;
   color: var(--text-secondary);
+  align-items: flex-start;
 }
 
 .form-wrapper {
