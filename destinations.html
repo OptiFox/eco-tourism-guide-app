@@ -1,11 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Tourism Guide App | Explore</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <h1>Eco-Tourism | Explore</h1>
+      </div>
+
+      <nav class="links">
+        <div class="nav-controls">
+          <button class="toggle-mode" aria-label="Toggle Theme">Dark Mode</button>
+          <button class="hamburger" id="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Explore</a></li>
+          <li><a href="booking.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h2>Breathtaking Destinations</h2>
+        <p>Explore the pristine environments we protect and visit.</p>
+        
+        <div class="gallery-grid">
+          <article class="gallery-item">
+            <img class="gallery-img" src="images/danum-valley.jpg" alt="Image: Rainforest">
+            <h3>Danum Valley</h3>
+          </article>
+          <article class="gallery-item">
+            <img class="gallery-img" src="images/sipadan.jpg" alt="Image: Coral Reef">
+            <h3>Sipadan Island</h3>
+          </article>
+          <article class="gallery-item">
+            <img class="gallery-img" src="images/kinabalu-peak.webp" alt="Image: Mountain Peak">
+            <h3>Mount Kinabalu</h3>
+          </article>
+          <article class="gallery-item">
+            <img class="gallery-img" src="images/langkawi-mangrove.jpg" alt="Image: Mangroves">
+            <h3>Langkawi Geopark</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-question">What is sustainable tourism?</button>
+            <div class="accordion-answer">
+              <p>Sustainable tourism minimizes the environmental impact of travel while supporting local communities and conservation efforts.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-question">Are the local guides certified?</button>
+            <div class="accordion-answer">
+              <p>Yes, all our local guides are thoroughly vetted, trained in first aid, and certified in local ecological conservation practices.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-question">How small are the tour groups?</button>
+            <div class="accordion-answer">
+              <p>To ensure zero footprint and a highly personalized experience, we cap all our expeditions at a maximum of 8 travelers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2026 Alif Daniel</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
