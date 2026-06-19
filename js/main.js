@@ -11,12 +11,6 @@ const body = document.body;
 
 btnToggleMode.addEventListener("click", () => {
   body.classList.toggle("dark");
-
-  if (body.classList.contains("dark")) {
-    btnToggleMode.textContent = "Light Mode";
-  } else {
-    btnToggleMode.textContent = "Dark Mode";
-  }
 });
 
 // Form validation
