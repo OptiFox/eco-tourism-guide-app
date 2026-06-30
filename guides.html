@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Tourism Guide App | Local Guides</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <a
+          href="index.html"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img
+            src="images/logo.svg"
+            alt="Eco-Tourism Guide Logo"
+            class="nav-logo"
+          />
+          <h1>Eco-Tourism | Guides</h1>
+        </a>
+      </div>
+
+      <nav class="links">
+        <div class="nav-controls">
+          <button class="toggle-mode" aria-label="Toggle Theme">
+            <svg
+              class="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              class="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button
+            class="hamburger"
+            id="mobile-menu-btn"
+            aria-label="Toggle Menu"
+          >
+            &#9776;
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Explore</a></li>
+          <li><a href="guides.html">Local Guides</a></li>
+          <li><a href="maps.html">Offline Maps</a></li>
+          <li><a href="booking.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="guides-directory" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+        
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+          <h2 style="color: var(--primary-color); font-size: 2.5rem; margin-bottom: 15px;">Verified Indigenous Guides</h2>
+          <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+            Connect directly with local experts. Every guide listed here has passed our strict greenwashing audit to ensure authentic, zero-footprint conservation practices.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          
+          <article class="destination-card">
+            <img src="images/canopy-walkway-taman-negara.jpg" alt="Taman Negara Canopy" style="height: 200px; object-fit: cover;">
+            <div class="card-content">
+              <h3 style="margin-bottom: 5px;">Ahmad & Family Tours</h3>
+              <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 15px; color: var(--primary-color); font-weight: bold; font-size: 0.9rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Certified Eco-Operator</span>
+              </div>
+              <p style="margin-bottom: 10px;"><strong>Region:</strong> Taman Negara</p>
+              <p style="font-size: 0.95rem; margin-bottom: 20px;">Specializes in deep jungle wildlife tracking, medicinal plant identification, and zero-footprint camping.</p>
+              <button class="cta-button" style="width: 100%;">Contact Ahmad</button>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/kinabalu-peak.webp" alt="Mount Kinabalu Peak" style="height: 200px; object-fit: cover;">
+            <div class="card-content">
+              <h3 style="margin-bottom: 5px;">Sabah Summit Guides</h3>
+              <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 15px; color: var(--primary-color); font-weight: bold; font-size: 0.9rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Certified Eco-Operator</span>
+              </div>
+              <p style="margin-bottom: 10px;"><strong>Region:</strong> Mount Kinabalu</p>
+              <p style="font-size: 0.95rem; margin-bottom: 20px;">Led by indigenous Kadazan-Dusun climbers. Focuses on safe, high-altitude trekking while preserving sacred mountain trails.</p>
+              <button class="cta-button" style="width: 100%;">Contact Guides</button>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/sipadan.jpg" alt="Sipadan Reef" style="height: 200px; object-fit: cover;">
+            <div class="card-content">
+              <h3 style="margin-bottom: 5px;">Mabul Reef Guardians</h3>
+              <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 15px; color: var(--primary-color); font-weight: bold; font-size: 0.9rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Certified Eco-Operator</span>
+              </div>
+              <p style="margin-bottom: 10px;"><strong>Region:</strong> Sipadan & Mabul</p>
+              <p style="font-size: 0.95rem; margin-bottom: 20px;">Local Bajau divers offering small-group marine encounters. Actively involved in coral restoration and anti-poaching efforts.</p>
+              <button class="cta-button" style="width: 100%;">Contact Guardians</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2026 WanderGreen</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -85,3 +85,26 @@ if (bookingForm) {
     }
   });
 }
+
+const downloadButtons = document.querySelectorAll(".download-btn");
+
+downloadButtons.forEach(button => {
+  button.addEventListener("click", function() {
+    // Prevent clicking twice
+    if (this.classList.contains("downloaded")) return;
+
+    // Change to downloading state
+    this.textContent = "Downloading...";
+    this.style.opacity = "0.7";
+    this.style.cursor = "wait";
+
+    // Simulate a 2-second download
+    setTimeout(() => {
+      this.textContent = "Downloaded ✓";
+      this.style.opacity = "1";
+      this.style.cursor = "default";
+      this.style.backgroundColor = "var(--surface-color)";
+      this.classList.add("downloaded");
+    }, 2000);
+  });
+});

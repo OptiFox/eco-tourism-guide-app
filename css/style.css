@@ -619,3 +619,7 @@ body.dark .icon-moon {
   box-shadow: 0 0 0;
   transform: translate(4px, 4px);
 }
+
+.card-content svg {
+  vertical-align: middle;
+}
